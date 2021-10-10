@@ -11,37 +11,53 @@
 	<title>Андрей Браун - Веб-разработчик</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.js"></script>
+	<script>new WOW().init();</script>
 </head>
 
 <body>
+   
+    <div class="container">
+		<div class="loader">
+			<div class="loader_items">
+				<span class="loader_item"></span>
+				<span class="loader_item"></span>
+				<span class="loader_item"></span>
+			</div>
+			<p class="loader_name">Загрузка</p>
+		</div>
+	</div>
+
 
 	<header>
 		<nav>
 			<div class="logo">Андрей Браун</div>
 
 			<div class="menu"><ul>
-				<li>Обо мне</li>
-				<li>Услуги</li>
-				<li>Кейсы</li>
-				<li>Прайс</li>
-				<li>Отзывы</li>
-				<li>Контакты</li>
+				<li> <a href="#"> Обо мне </a> </li>
+				<li> <a href="#"> Услуги </a> </li>
+				<li> <a href="#"> Кейсы </a> </li>
+				<li> <a href="#"> Прайс </a> </li>
+				<li> <a href="#"> Отзывы </a> </li>
+				<li> <a href="#"> Контакты </a> </li>
 			</ul></div>
 		</nav>
 	</header>
 
-	<div class="main">
+    <main>
+	<section class="main">
 		<div class="title_container">
 		    <h1>Привет <br> Я Андрей Браун</h1>
 		    <h4>Фулл стек веб-разработчик</h4>
-		    <input type="submit" value="Обо мне">
-		    <input type="submit" value="Мои работы">
+		    <input type="button" value="Обо мне">
+		    <input type="button" value="Мои работы">
 	    </div>
-	</div>    
+	</section>    
 	
-	<div class="about_me">
+	<section class="about_me">
 		<div class="inform">
-		<h3>Обо мне</h3>
+		<h3> Обо мне</h3>
 		<img class="picture_1" src="img/Черта заголовка.png" alt=""> <br>
 		<img class="picture_2" src="img/фотка1.png" alt="">
 
@@ -51,14 +67,14 @@
 
         <div class="resume">
 	    <img class="picture_3" src="img/иконка.png" alt="Стрелочка загрузки"> 
-	    <input type="reset" value="Скачать резюме">
+	    <input type="button" value="Скачать резюме">
 		</div>
-	</div>
+	</section>
 
-    <div class="i_can">
+    <section class="i_can">
     	<div class="inform_2">
-	    <h3>Что я умею </h3>
-		<img class="picture_4" src="img/черта заголовка.png" alt="">
+	    <h3 class="animate__zoomInUp">Что я умею </h3>
+		<img class="picture_4" src="img/Черта заголовка.png" alt="">
         </div>
 
         <div class="item_skills">
@@ -84,11 +100,11 @@
 		    <h4>Маркетинг</h4>
 		    <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit  Ut<br> pariatur suscipit harum ea <br> quis, voluptatem.</p>
 	    </div>
-	 </div>   
+	 </section>   
 
     <div class="case">
     	<div class="inform_3">
-		<h3>Кейсы </h3>
+		<h3 class="animate__rotateIn">Кейсы </h3>
 		<img src="img/Черта заголовка.png" alt="">
 		</div>
 
@@ -109,7 +125,7 @@
 		     </div> 
 
 		    <div class="visit">
-		    <input type="submit" value="">
+		    <input type="button" value="">
 		    <a target="_blank" href="http://www.somedomain.com"> Visit live site</a>	
 		    </div>
         </div>
@@ -123,8 +139,9 @@
     </div>
 
 
+
     <div class="price">
-     <div class="inform_4">
+    <div class="inform_4">
 		<h2>Расчет стоимости</h2>
 		
 		<div class="payment"> 
@@ -180,25 +197,27 @@
     </div>
 
 
+
+
     <div class="statistics">
     	<div class="inform_5">
 		<h3>Немного статистики</h3>
 		<img src="img/Черта заголовка.png" alt="">
         </div>
 
-		<div class="number">
+		<div class="number animate__backInRight wow">
 			<img src="img/смайл.png" alt=""> <br> <p> 120 <br> Счастливых клиентов </p>
 		</div>
 
-		<div class="number">
+		<div class="number animate__backInRight wow">
 			<img src="img/скобки.png" alt=""> <br> <p> 4,600 <br> Часов работы </p>
 		</div>
 
-		<div class="number">
+		<div class="number animate__backInRight wow">
 			<img src="img/галочка.png" alt=""> <br> <p> 340 <br> Проектов завершено </p>
 		</div>
 
-		<div class="number">
+		<div class="number animate__backInRight wow">
 			<img src="img/кубок.png" alt=""> <br> <p> 23 <br> Награды получено </p>
 		</div>
 
@@ -208,7 +227,7 @@
 
     <div class="reviews"> 
     	<div class="inform_6">
-		<h3>Отзывы</h3>
+		<h3 class="animate__shakeY">Отзывы</h3>
 		<img src="img/Черта заголовка.png" alt=""> <br>
 		<img src="img/фотка3.png" alt="">
       
@@ -227,7 +246,7 @@
 	
 	<div class="my_contacts">
 		<div class="inform_7">
- 	    <h3>Мои контакты</h3>
+ 	    <h3 class="animate__zoomIn">Мои контакты</h3>
 		<img src="img/Черта заголовка.png" alt="">
 
 		<p> Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Labore, iste. Earum, porro, perspiciatis.</p>
@@ -235,15 +254,15 @@
 
         <div class="my_address">
             <div class="address">
-    	    <img src="img/гео.png" alt=""> <br> <p>Санкт-Петербург <br> Невский проспект 11</p>
+    	    <img src="img/гео.png" class="animate__wobble" alt=""> <br> <p>Санкт-Петербург <br> Невский проспект 11</p>
             </div>
 
             <div class="address">
-    	    <img src="img/конверт.png" alt=""> <br> <p>info@companyname.com </p>
+    	    <img src="img/конверт.png" class="animate__wobble" alt=""> <br> <p>info@companyname.com </p>
             </div>
 
             <div class="address">
-    	    <img src="img/труба.png" alt=""> <br> <p> +7 999 999-99-99 </p>
+    	    <img src="img/труба.png" class="animate__wobble" alt=""> <br> <p> +7 999 999-99-99 </p>
             </div>
         </div>
 
@@ -253,18 +272,19 @@
 			    <input class="feedback" type="text" placeholder="Имя">  
 			    <input class="feedback" type="text" placeholder="Email"> <br>
 			    <textarea class="sms">Сообщение</textarea> <br>
-			    <input class="send" type="reset" value="Отправить">
+			    <input class="send" type="button" value="Отправить">
 		    </form>
 	    </div>
 
     </div>
-   
     
+    
+
     <footer>
         <div class="the_end">
 		<p>Copyright©2021 Андрей Браун. Design by Web</p>
         </div>
     </footer>
-
+    </main>
 </body>
 </html>
